@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+:root {
+    --font: 'League Spartan', sans-serif;
+    --fundo: url('imgs/fundo.png');
+    --primary-color: #FFFFFF;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family:var(--font) ;
+}
+
+.titulo, h2 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.titulo__game-over {
+    font-size: 7em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subtitulo__game-over {
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.subtitulo, h3 {
+    font-size: 2em;
+    margin-top: 12px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    text-align: center;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+
+.btn__jogar {
+    margin-top: 12px;
+    padding: 12px;
+    color: #0088FF;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 414px) {
+
+
+    .titulo, h2 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    
+    .titulo__game-over {
+        font-size: 4em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .subtitulo, h3 {
+        font-size: 1.5em;
+        margin: 12px 2.6em 0;
+        line-height: 30px;
+    }
+
+    .mensagem {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+}
